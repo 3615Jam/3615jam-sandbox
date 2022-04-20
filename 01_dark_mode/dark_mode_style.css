@@ -1,0 +1,255 @@
+/* ----------[ root var ]---------- */
+:root {
+    --txt-color: black;
+    --bg-color: white;
+    --shadow: 0px 10px 10px grey;
+}
+
+/* ----------[ dark_theme var ]---------- */
+/* '.dark_theme' turns the design to dark when OS preferences are set to light */
+.dark_theme {
+    --txt-color: white;
+    --bg-color: black;
+    --shadow: none;
+    --light-switch: rotateX(0.5turn);
+}
+
+/* '.light_theme' overrides OS preferences when set to dark */
+.light_theme {
+    --txt-color: black;
+    --bg-color: white;
+    --shadow: 0px 10px 10px grey;
+    --light-switch: rotateX(0.5turn);
+}
+
+/* ----------[ center everything ]---------- */
+.super_centered {
+    min-height: 100vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.item {
+    margin: 3rem;
+    padding: 3rem;
+    border: 5px dashed green;
+}
+
+.super_centered p {
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* ----------[ V1 - light switch design ]---------- */
+
+#light_switch {
+    width: 10vw;
+    height: 15vw;
+    /* max-width: 80px; */
+    /* max-height: 100px; */
+    min-width: 25px;
+    min-height: 50px;
+    /* border: 0.5rem outset silver; */
+    background-color: #eee;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* position: fixed; */
+    /* top: 2rem; */
+    /* right: 2rem; */
+    border: 1px solid red;
+}
+
+#light_switch p {
+    border: 1px solid green;
+    /* margin: 1rem; */
+    padding: 0;
+    color: black;
+    font-size: min(1vw, 0.5rem);
+}
+
+#light_switch_0 {
+    width: 50%;
+    height: 100%;
+    max-width: 80px;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid yellow;
+}
+
+#light_switch_1 {
+    border: 3px solid #333;
+    background-color: #ddd;
+    width: 50%;
+    height: 50%;
+}
+
+#light_switch_2 {
+    border: 3px solid #333;
+    background-color: grey;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#light_switch_3 {
+    background-color: white;
+    width: 120%;
+    height: 80%;
+    clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 20% 100%, 0% 0%);
+}
+
+#light_switch_4 {
+    background-color: dimgrey;
+    width: 120%;
+    height: 20%;
+    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%, 20% 0%);
+}
+
+/* ----------[ V2 light switch design ]---------- */
+/* The switch - the box around the slider */
+#light_switch_v2 {
+    /* position: fixed; */
+    /* top: 2rem; */
+    /* right: 2rem; */
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+#light_switch_v2 input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #2196f3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* ----------[ deactivated JS ]---------- */
+#no_js {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(0.2rem);
+    -webkit-backdrop-filter: blur(0.2rem);
+    text-align: center;
+}
+
+#no_js h1 {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+#no_js h1:first-child {
+    font-size: 4rem;
+}
+
+/* ----------[ dark mode ]---------- */
+@media (prefers-color-scheme: dark) {
+    body {
+        --bg-color: black;
+        --txt-color: white;
+    }
+
+    #bottom {
+        --shadow: none;
+    }
+
+    #bottom.light_theme {
+        --shadow: 0px 10px 10px grey;
+    }
+
+    #no_js {
+        color: white;
+        background-color: rgba(2, 2, 2, 0.8);
+    }
+
+    #light_switch_0 {
+        --light-switch: rotateX(0.5turn);
+    }
+
+    #light_switch_0.light_theme {
+        --light-switch: rotateX(0);
+    }
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--txt-color);
+}
+
+#light_switch_0 {
+    transform: var(--light-switch);
+    /* -webkit-transition: 0.4s; */
+    /* transition: 0.4s; */
+}
+
+@media screen and (max-width: 768px) {
+    .super_centered {
+        flex-direction: column;
+        align-items: center;
+    }
+}
