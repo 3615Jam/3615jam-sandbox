@@ -1,0 +1,32 @@
+[
+    {
+        "name": "DWWM - Jam Project",
+        "techno": ["HTML", "CSS", "JS", "PHP", "MySQL"],
+        "description": "DWWM - Jam Project est mon projet de fin de formation. C'est une plateforme d'activités ludiques et éducatives pour enfants à la disposition des parents. C'est un projet fullstack : le front est codé en HTML / CSS / JS, avec l'aide du framework Bootstrap, et le back est codé en PHP, MySQL pour la base de données."
+    },
+    {
+        "name": "Project #2",
+        "techno": ["HTML"],
+        "description": "Project #2 blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah."
+    },
+    {
+        "name": "Project #3",
+        "techno": ["CSS"],
+        "description": "Project #3 blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah."
+    },
+    {
+        "name": "Project #4",
+        "techno": ["JS"],
+        "description": "Project #4 blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah."
+    },
+    {
+        "name": "Project #5",
+        "techno": ["PHP"],
+        "description": "Project #5 blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah."
+    },
+    {
+        "name": "Project #6",
+        "techno": ["MySQL"],
+        "description": "Project #6 blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah."
+    }
+]
