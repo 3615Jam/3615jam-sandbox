@@ -9,11 +9,17 @@
         <link rel="stylesheet" href="projects-style.css" />
     </head>
     <body>
-        <header></header>
+        <header>
+            <nav class="m-5 d-flex justify-content-center">
+                <div id="cursor-down" class="m-1 d-flex align-items-end">▶️</div>
+                <div class="m-1 d-flex flex-column">
+                    <a href="projects.html" class="m-1 btn btn-outline-primary">PROJECTS - HTML</a>
+                    <a href="projects.php" class="m-1 btn btn-outline-info">PROJECTS - PHP</a>
+                    <a href="cards.html" class="m-1 btn btn-success disabled">CARDS STYLES</a>
+                </div>
+            </nav>
+        </header>
         <main>
-            <section class="m-5 d-flex flex-wrap justify-content-center">
-                <a href="projects.html" class="btn btn-success">PROJECTS</a>
-            </section>
             <!-- LIGHT MODE SECTION -->
             <section id="light_mode" class="m-5 d-flex flex-wrap justify-content-center">
                 <!-- CARD STYLE #1 : jam central style -->
@@ -73,6 +79,50 @@
                             <p class="card-text description">Project's description (small).<br /><br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, doloremque!</p>
                         </div>
                     </a>
+                </div>
+                <!-- CARD STYLE #5 : front / back technos separated -->
+                <div class="card text-center m-3 bg-light text-dark" style="max-width: 18rem">
+                    <div class="card-header"><img src="../img/3615jam-320-bigborder.png" class="card-img-top" /></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Project title</h5>
+                        <div class="d-flex justify-content-between">
+                            <p class="d-flex flex-column flex-shrink-0 tech-panel">
+                                <span class="mb-3">Front</span>
+                                <span class="m-1 badge rounded-pill bg-primary">tech#1</span>
+                                <span class="m-1 badge rounded-pill bg-success">tech#2</span>
+                                <span class="m-1 badge rounded-pill bg-warning">tech#3</span>
+                            </p>
+                            <p class="d-flex flex-column flex-shrink-0 tech-panel">
+                                <span class="mb-3">Back</span>
+                                <span class="m-1 badge rounded-pill bg-info">tech#4</span>
+                                <span class="m-1 badge rounded-pill bg-secondary">tech#5</span>
+                            </p>
+                        </div>
+                        <p class="card-text description">Project's description (long).<br /><br />Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis eum ipsam alias nesciunt reprehenderit, asperiores officiis aliquam mollitia a expedita eaque necessitatibus esse, tempore accusantium aspernatur exercitationem repellendus dignissimos ea at quia libero doloribus modi! Recusandae alias sint, tempore molestias sed nesciunt dolores ea quia totam maxime voluptas fugiat. Harum eius sapiente totam. A rerum repellendus quia molestiae. Nisi modi ea laborum repellendus ut distinctio quam, nemo officiis id porro minima inventore, ipsum nam autem natus ducimus quibusdam sed animi!</p>
+                    </div>
+                </div>
+                <!-- CARD STYLE #6 : technos at bottom -->
+                <div class="card text-center m-3 bg-light text-dark" style="max-width: 18rem">
+                    <div class="card-header"><img src="../img/3615jam-320-bigborder.png" class="card-img-top" /></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Project title</h5>
+                        <p class="card-text description">Project's description (long).<br /><br />Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis eum ipsam alias nesciunt reprehenderit, asperiores officiis aliquam mollitia a expedita eaque necessitatibus esse, tempore accusantium aspernatur exercitationem repellendus dignissimos ea at quia libero doloribus modi! Recusandae alias sint, tempore molestias sed nesciunt dolores ea quia totam maxime voluptas fugiat. Harum eius sapiente totam. A rerum repellendus quia molestiae. Nisi modi ea laborum repellendus ut distinctio quam, nemo officiis id porro minima inventore, ipsum nam autem natus ducimus quibusdam sed animi!</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between">
+                            <p class="d-flex flex-column flex-shrink-0 tech-panel">
+                                <span class="mb-3">Front</span>
+                                <span class="m-1 badge rounded-pill bg-primary">tech#1</span>
+                                <span class="m-1 badge rounded-pill bg-success">tech#2</span>
+                                <span class="m-1 badge rounded-pill bg-warning">tech#3</span>
+                            </p>
+                            <p class="d-flex flex-column flex-shrink-0 tech-panel">
+                                <span class="mb-3">Back</span>
+                                <span class="m-1 badge rounded-pill bg-info">tech#4</span>
+                                <span class="m-1 badge rounded-pill bg-secondary">tech#5</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
