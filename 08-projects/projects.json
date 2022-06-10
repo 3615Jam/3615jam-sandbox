@@ -1,32 +1,50 @@
 [
     {
         "name": "DWWM - Jam Project",
+        "source": "../img/3615jam-320-bigborder.png",
+        "link": "jamproject.php",
         "techno": ["HTML", "CSS", "JS", "PHP", "MySQL"],
+        "summary": "Plateforme d'activités ludiques et éducatives pour enfants à la disposition des parents.",
         "description": "DWWM - Jam Project est mon projet de fin de formation. C'est une plateforme d'activités ludiques et éducatives pour enfants à la disposition des parents. C'est un projet fullstack : le front est codé en HTML / CSS / JS, avec l'aide du framework Bootstrap, et le back est codé en PHP, MySQL pour la base de données."
     },
     {
         "name": "Project #2",
+        "source": "../img/3615jam-320-bigborder.png",
+        "link": "",
         "techno": ["HTML"],
+        "summary": "Project 2 summary",
         "description": "Project #2 blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah."
     },
     {
         "name": "Project #3",
+        "source": "../img/3615jam-320-bigborder.png",
+        "link": "",
         "techno": ["CSS"],
+        "summary": "Project 3 summary",
         "description": "Project #3 blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah."
     },
     {
         "name": "Project #4",
+        "source": "../img/3615jam-320-bigborder.png",
+        "link": "",
         "techno": ["JS"],
+        "summary": "Project 4 summary",
         "description": "Project #4 blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah."
     },
     {
         "name": "Project #5",
+        "source": "../img/3615jam-320-bigborder.png",
+        "link": "",
         "techno": ["PHP"],
+        "summary": "Project 5 summary",
         "description": "Project #5 blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah."
     },
     {
         "name": "Project #6",
+        "source": "../img/3615jam-320-bigborder.png",
+        "link": "",
         "techno": ["MySQL"],
+        "summary": "Project 6 summary",
         "description": "Project #6 blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah."
     }
 ]

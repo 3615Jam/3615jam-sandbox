@@ -16,6 +16,24 @@ a:hover {
     text-decoration: none;
 }
 
+/* ----------[ Pour rendre la carte entière cliquable ]---------- */
+
+/* 1/2 : on rend le positionnement du parent 'relative' */
+.card {
+    position: relative;
+}
+
+/* 2/2 : puis on utilise le pseudo-élément '::before' sur le lien pour que celui-ci se "propage" au parent (= la carte entière) */
+.card-link::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* -------------------------------------------------------------- */
+
 .card:hover {
     transform: translateY(-3px) scale(1.005) translateZ(0);
     box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11);
@@ -26,10 +44,17 @@ a:hover {
     margin: 1rem;
 }
 
+.card-body {
+    /* background: url(../img/bottom.jpg) left bottom repeat; */
+}
+
 .description {
     text-align: start;
-    max-height: 10rem;
+    max-height: 12rem;
     overflow: scroll;
+    /* background-color: rgba(0, 0, 0, 0.03); */
+    /* background-color: #fff; */
+    padding: 1rem;
 }
 
 #cursor-down {

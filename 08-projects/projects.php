@@ -8,7 +8,7 @@
     <title>### PROJECTS - PHP ###</title>
     <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="projects-style.css" />
-    <!-- <script src="projects.js" defer></script> -->
+    <script src="projects.js" defer></script>
 </head>
 
 <body>
@@ -25,60 +25,69 @@
     <main>
         <!-- LIGHT MODE SECTION -->
         <section id="light_mode" class="m-5 d-flex flex-wrap justify-content-center">
+
             <?php
-            // on récup le json des projets
+            // --------------------------------------------------
+            // on récup la liste des projets (json) et on la décode
             $projects = file_get_contents("projects.json");
-            // on le décode 
             $proj_details = json_decode($projects, true);
             // test pour confirmer les données récupérées 
             // var_dump($proj_details);
-            // pour chaque projets, on crée une carte et on la rempli avec les valeurs du json
+            // --------------------------------------------------
+            // on boucle pour créer une carte par projet : 
             foreach ($proj_details as $key_proj => $val_proj) {
-                // test pour confirmer les données récupérées 
-                // echo $key_proj . " : " . $val_proj['name'] . "<br />";
+                // --------------------------------------------------
+                // début de la carte 
+                // <a href="' . $val_proj['link'] . '" class="card-link">' . $val_proj['name'] . '</a>
                 $proj_card = '
-                <div class="card text-center m-3 bg-light text-dark" style="max-width: 18rem">
-                    <div class="card-header"><img src="../img/3615jam-320-bigborder.png" class="card-img-top" /></div>
-                    <div class="card-body">
-                        <h5 class="card-title">' . $val_proj['name'] . '</h5>
-                        <p class="card-text">
+                    <div class="card text-center m-3 bg-light text-dark" style="width: 20rem; height: 30rem">
+                        <div class="card-header"><img src="' . $val_proj['source'] . '" class="card-img-top" alt="project logo" /></div>
+                        <div class="card-body">
+                            <h5 class="card-title m-3">' . $val_proj['name'] . '</h5>
+                            <p class="card-text description">' . $val_proj['description'] . '</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-center">
                 ';
-                // on crée des 'pills' colorées pour chaque techno utilisée dans chaque projet et on les rajoute à la carte
+                // --------------------------------------------------
+                // on boucle à nouveau pour créer des 'pills' colorées pour chaque techno utilisée dans chaque projet 
                 foreach ($val_proj['techno'] as $key_tech => $val_tech) {
                     // test pour confirmer les données récupérées 
                     // echo $val_tech;
                     switch ($val_tech) {
                         case "HTML":
-                            $pill = "primary";
+                            $pill_color = "primary";
                             break;
                         case "CSS":
-                            $pill = "success";;
+                            $pill_color = "success";
                             break;
                         case "JS":
-                            $pill = "warning";;
+                            $pill_color = "warning";
                             break;
                         case "PHP":
-                            $pill = "info";;
+                            $pill_color = "info";
                             break;
                         case "MySQL":
-                            $pill = "secondary";;
+                            $pill_color = "secondary";
                             break;
                         default:
-                            echo "Bizarre, il semble qu'aucune techno n'ait été utilisée sur ce projet.";
+                            echo "Oups ! Ceci n'est pas sensé arriver !";
                     }
-                    $proj_card .= '<span class="m-1 badge rounded-pill bg-' . $pill . '">' . $val_tech . '</span>';
+                    // on ajoute chaque pill au bas de la carte 
+                    $proj_card .= '<span class="m-1 badge rounded-pill bg-' . $pill_color . '">' . $val_tech . '</span>';
                 }
-                // on finalise la carte avec la description du projet 
+                // --------------------------------------------------
+                // on finalise la carte 
                 $proj_card .= '
-                </p>
-                <p class="card-text description">' . $val_proj['description'] . '</p>
-                </div>
-                </div>
+                            </div>
+                        </div>
+                    </div>
                 ';
-                // on affiche la carte complète 
+                // on affiche la carte complétée 
                 echo $proj_card;
             }
             ?>
+
         </section>
     </main>
     <footer></footer>
