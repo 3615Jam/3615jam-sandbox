@@ -2,7 +2,7 @@
     {
         "name": "DWWM - Jam Project",
         "logo": "../img/3615jam-320-bigborder.png",
-        "link": "jamproject.php",
+        "link": "/projects/dwwm-jamproject",
         "techno": ["HTML", "CSS", "JS", "PHP", "MySQL"],
         "summary": "Plateforme d'activités ludiques et éducatives pour enfants à la disposition des parents.",
         "description": "DWWM - Jam Project est mon projet de fin de formation. C'est une plateforme d'activités ludiques et éducatives pour enfants à la disposition des parents. C'est un projet fullstack : le front est codé en HTML / CSS / JS, avec l'aide du framework Bootstrap, et le back est codé en PHP, MySQL pour la base de données."
