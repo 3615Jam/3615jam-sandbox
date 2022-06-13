@@ -44,13 +44,9 @@ a:hover {
     margin: 1rem;
 }
 
-.card-body {
-    /* background: url(../img/bottom.jpg) left bottom repeat; */
-}
-
 .description {
-    text-align: start;
-    max-height: 12rem;
+    /* text-align: start; */
+    /* max-height: 12rem; */
     overflow: scroll;
     /* background-color: rgba(0, 0, 0, 0.03); */
     /* background-color: #fff; */

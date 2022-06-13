@@ -1,7 +1,7 @@
 [
     {
         "name": "DWWM - Jam Project",
-        "source": "../img/3615jam-320-bigborder.png",
+        "logo": "../img/3615jam-320-bigborder.png",
         "link": "jamproject.php",
         "techno": ["HTML", "CSS", "JS", "PHP", "MySQL"],
         "summary": "Plateforme d'activités ludiques et éducatives pour enfants à la disposition des parents.",
@@ -9,7 +9,7 @@
     },
     {
         "name": "Project #2",
-        "source": "../img/3615jam-320-bigborder.png",
+        "logo": "../img/3615jam-320-bigborder.png",
         "link": "",
         "techno": ["HTML"],
         "summary": "Project 2 summary",
@@ -17,7 +17,7 @@
     },
     {
         "name": "Project #3",
-        "source": "../img/3615jam-320-bigborder.png",
+        "logo": "../img/3615jam-320-bigborder.png",
         "link": "",
         "techno": ["CSS"],
         "summary": "Project 3 summary",
@@ -25,7 +25,7 @@
     },
     {
         "name": "Project #4",
-        "source": "../img/3615jam-320-bigborder.png",
+        "logo": "../img/3615jam-320-bigborder.png",
         "link": "",
         "techno": ["JS"],
         "summary": "Project 4 summary",
@@ -33,7 +33,7 @@
     },
     {
         "name": "Project #5",
-        "source": "../img/3615jam-320-bigborder.png",
+        "logo": "../img/3615jam-320-bigborder.png",
         "link": "",
         "techno": ["PHP"],
         "summary": "Project 5 summary",
@@ -41,7 +41,7 @@
     },
     {
         "name": "Project #6",
-        "source": "../img/3615jam-320-bigborder.png",
+        "logo": "../img/3615jam-320-bigborder.png",
         "link": "",
         "techno": ["MySQL"],
         "summary": "Project 6 summary",

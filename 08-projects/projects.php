@@ -38,13 +38,12 @@
             foreach ($proj_details as $key_proj => $val_proj) {
                 // --------------------------------------------------
                 // début de la carte 
-                // <a href="' . $val_proj['link'] . '" class="card-link">' . $val_proj['name'] . '</a>
                 $proj_card = '
-                    <div class="card text-center m-3 bg-light text-dark" style="width: 20rem; height: 30rem">
-                        <div class="card-header"><img src="' . $val_proj['source'] . '" class="card-img-top" alt="project logo" /></div>
+                    <div class="card text-center m-3 bg-light text-dark" style="width: 18rem; height: 26rem">
+                        <div class="card-header"><img src="' . $val_proj['logo'] . '" class="card-img-top" alt="project logo" /></div>
                         <div class="card-body">
-                            <h5 class="card-title m-3">' . $val_proj['name'] . '</h5>
-                            <p class="card-text description">' . $val_proj['description'] . '</p>
+                            <h5 class="card-title m-3"><a href="' . $val_proj['link'] . '" class="card-link">' . $val_proj['name'] . '</a></h5>
+                            <p class="card-text description">' . $val_proj['summary'] . '</p>
                         </div>
                         <div class="card-footer">
                             <div class="d-flex justify-content-center">

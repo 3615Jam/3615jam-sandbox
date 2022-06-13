@@ -33,7 +33,8 @@ function jamtest() {
 }
 
 let cards = document.querySelectorAll(".card");
-console.log(cards);
+// vérif des données reçues #1
+// console.log(cards);
 cards.forEach((card) => {
     card.addEventListener("click", jamtest);
 });
